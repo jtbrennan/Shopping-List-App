@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shopping List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <h1><span class="blue">&lt;</span>Shopping<span class="blue">&gt;</span> <span class="yellow">List</pan></h1>
+  <h2>Created by <a href="https://github.com/jtbrennan" target="_blank">John Brennan</a></h2>
+  
+  <table class="container" id="myTable">
+  		<tr>
+  			<th><h1>Items</h1></th>
+  			<th><h1>Catagory</h1></th>
+  		</tr>
+  </table>
+  
+
+  <button class="open-button" onclick="openForm()">Add</button>
+
+  <button class="remove-button" onclick="removeItem()">Remove</button>
+  
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <h1>Add Item</h1>
+  
+      <label for="email"><b>Item Name</b></label>
+      <input type="text" placeholder="Enter Name" id="uname" required>
+  
+      <label><b>Catagory</b></label>
+      <input type="text" placeholder="Enter Catagory" id="ucatagory" required>
+  
+      <button type="button" class="btn" onclick="send()">Add Item</button>
+      <button type="button" class="btn close" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  
+  
+ </body>
+
+</html>
